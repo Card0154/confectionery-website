@@ -1,0 +1,45 @@
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: .3rem;
+  margin-right: .5em;
+}
+
+.nav-open,
+.nav-close {
+  background-color: #fff;
+  padding: .5em;
+  border: 2px solid #000;
+  display: block;
+}
+
+.nav-open:hover,
+.nav-close:hover {
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
