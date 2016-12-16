@@ -144,6 +144,10 @@ section {
   background-color: #fff;
 }
 
+figcaption {
+  display: none;
+}
+
 @media only screen and (min-width: 38em) {
 
   .contact {
@@ -188,6 +192,14 @@ section {
   .nav li a:hover {
     color: #000;
     background-color: #fff;
+  }
+
+  figcaption {
+    display: block;
+  }
+
+  figure img {
+    margin-bottom: 1.3rem;
   }
 }
 
