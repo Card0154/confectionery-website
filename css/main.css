@@ -15,6 +15,10 @@ body {
   width: 100%;
 }
 
+i {
+  display: none;
+}
+
 .nav {
   display: none;
   padding-left: 0;
@@ -145,7 +149,11 @@ section {
 }
 
 figcaption {
-  display: none;
+  display: block;
+}
+
+figure img {
+  margin-bottom: 1.3rem;
 }
 
 footer {
@@ -170,10 +178,19 @@ footer {
 
   h1 {
     position: absolute;
-    left: 10px;
+    left: 45px;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+  }
+
+  i {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: transitionY(-50%);
   }
 
   nav {
@@ -197,14 +214,6 @@ footer {
   .nav li a:hover {
     color: #000;
     background-color: #fff;
-  }
-
-  figcaption {
-    display: block;
-  }
-
-  figure img {
-    margin-bottom: 1.3rem;
   }
 }
 
