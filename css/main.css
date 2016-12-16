@@ -148,6 +148,11 @@ figcaption {
   display: none;
 }
 
+footer {
+  color: #fff;
+  background-color: #000;
+}
+
 @media only screen and (min-width: 38em) {
 
   .contact {
