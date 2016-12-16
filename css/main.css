@@ -37,14 +37,15 @@ body {
   border-radius: 4px;
 }
 
+.nav-close {
+  display: none;
+}
+
 .nav-open:hover,
 .nav-close:hover {
   background-color: #000;
 }
 
-.nav-close {
-  display: none;
-}
 
 .nav-check:checked ~ .nav {
   display: block;
@@ -132,7 +133,7 @@ h2 {
 }
 
 .font {
-  font-family: 'Rochester', cursive;
+  font-family: Rochester, cursive;
 }
 
 .sans-serif {
@@ -153,10 +154,47 @@ section {
     height: 500px;
   }
 
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
+  h1 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+
+  nav {
+    padding: .65rem;
+  }
+
+  .nav {
+    z-index: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 0;
+    display: inline-block;
+    float: right;
+  }
+
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav li a:hover {
+    color: #000;
+    background-color: #fff;
+  }
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 60em) {
 
-
+  .banner {
+    height: 720px;
+  }
 
 }

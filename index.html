@@ -11,24 +11,30 @@
 <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
   <header class="relative">
-    <nav>
+    <nav id="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
         <img class="nav-open img-flex" src="images/nav-icon.svg" alt="Open Navigation Button.">
         <img class="nav-close img-flex" src="images/nav-icon-close.svg" alt="Close Navigation Button.">
       </label>
       <ul class="absolute nav zindex-2">
-        <li><a class="text-center island-half" href="">History</a></li>
-        <li><a class="text-center island-half" href="">Products</a></li>
-        <li><a class="text-center island-half" href="">Contact</a></li>
-        <li><a class="text-center island-half" href="">Reserve</a></li>
+        <li><a class="micro text-center island-half" href="#history">History</a></li>
+        <li><a class="micro text-center island-half" href="#products">Products</a></li>
+        <li><a class="micro text-center island-half" href="#contact">Contact</a></li>
+        <li><a class="micro text-center island-half" href="#reserve">Reserve</a></li>
       </ul>
-      <h1 class="yotta inline-block push-0 valign-middle normal italic font">Coco's Chocolatiers</h1>
+      <h1 class="giga inline-block push-0 valign-middle normal italic font">Coco's Chocolatiers</h1>
     </nav>
   </header>
 
-  <main class="zindex-1">
+  <main class="zindex-1" id="#main">
     <section class="banner max-width text-center relative push">
       <div class="width-full block absolute slogan">
         <h2 class="yotta normal text-center push-0 font">Why don't you come in</h2>
@@ -39,12 +45,12 @@
       </div>
     </section>
 
-    <section class="max-length island-half push">
+    <section class="max-length island-half push" id="history">
       <h3 class="text-center font peta">History of Coco's Chocolatiers</h3>
       <p class="gutter-half">Run by the Deschamps family, Coco's Chocolatiers has been an active part of the Belleville community since the 1950s. Located in downtown Belleville, the quaint shop occupies a populated street corner and is a must-see for those wanting the comforts of home. The shop is considered a landmark to local sweet-enthusiasts. One of the most memorable aspects of the shop is the decor; an <i>homage</i> to the classic look of the shops during the early 1900s.</p>
     </section>
 
-    <section class="max-length island-half push">
+    <section class="max-length island-half push" id="products">
       <h3 class="text-center font peta">Featured Products</h3>
       <div class="grid gutter-half push-half">
         <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4">
@@ -66,7 +72,7 @@
       </div>
     </section>
 
-    <section class="max-length island-half push">
+    <section class="max-length island-half push" id="contact">
       <h3 class="text-center font peta">Contact Us</h3>
       <div class="grid gutter-1-2">
         <div class="unit xs-1 s-1 m-1-3 l-1-3">
@@ -85,7 +91,7 @@
       <div>
     </section>
 
-    <section class="max-length island-half push">
+    <section class="max-length island-half push" id="reserve">
       <h3 class="text-center font peta">Reserve</h3>
       <form class="grid" method="post">
         <div class="push unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
@@ -130,10 +136,6 @@
         </div>
       </form>
     </section>
-
-
-
-
-
+  </main
 </body>
 </html>
