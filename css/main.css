@@ -43,6 +43,9 @@ i {
 }
 
 .nav-close {
+  color: pink;
+  padding: .14rem;
+  font-size: 1rem;
   display: none;
 }
 
@@ -175,7 +178,7 @@ footer {
   .nav-close {
     display: none;
   }
-
+  
   h1 {
     position: absolute;
     left: 45px;
