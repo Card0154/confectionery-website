@@ -17,7 +17,7 @@
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <header class="relative">
+  <header class="relative" role="banner">
     <nav id="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
@@ -34,7 +34,7 @@
     </nav>
   </header>
 
-  <main class="zindex-1" id="#main">
+  <main class="zindex-1" id="#main" role="main">
     <section class="banner max-width text-center relative push">
       <div class="width-full block absolute slogan">
         <h2 class="yotta normal text-center push-0 font">Why don't you come in</h2>
@@ -96,7 +96,7 @@
           <h4 class="push-0 contact sans-serif kilo">Email Us:</h4>
           <p class="milli contact">info@chocolatier.ca</p>
         </div>
-      <div>
+      </div>
     </section>
 
     <section class="max-length island-half push" id="reserve">
@@ -115,11 +115,10 @@
           <input type="email" id="email" placeholder="example@gmail.ca">
         </div>
         <div class="push unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
-          <label for="type">
+          <label for="order">
             <span class="sans-serif milli">Order</span>
           </label>
-          <select id="checkbox">
-            <option></option>
+          <select id="order">
             <option>Vanilla cupcakes</option>
             <option>Chocolate truffles</option>
             <option>Flavoured popcorn</option>
@@ -127,11 +126,10 @@
           </select>
         </div>
         <div class="push unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
-          <label for="quantity">
+          <label for="order-size">
             <span class="sans-serif milli">Order Size</span>
           </label>
-          <select id="checkbox">
-            <option></option>
+          <select id="order-size">
             <option>Half dozen</option>
             <option>Dozen</option>
             <option>Baker's dozen</option>
@@ -144,6 +142,6 @@
         </div>
       </form>
     </section>
-  </main
+  </main>
 </body>
 </html>
