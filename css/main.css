@@ -1,26 +1,45 @@
+html {
+  font-family: Georgia, serif;
+  background-color: #f3f3f3;
+}
+
+header {
+  background-color: #000;
+}
+
+h1 {
+  color: #fff;
+}
+
+body {
+  width: 100%;
+}
+
+.nav {
+  display: none;
+  padding-left: 0;
+  top: 52px
+  list-style-type: none;
+}
+
 .nav-label {
   cursor: pointer;
-  display: inline-block;
   width: 40px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-bottom: .3rem;
-  margin-right: .5em;
 }
 
 .nav-open,
 .nav-close {
+  width: 60%;
   background-color: #fff;
-  padding: .5em;
-  border: 2px solid #000;
-  display: block;
+  transition: background-color 0.5s ease;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
 }
 
 .nav-open:hover,
 .nav-close:hover {
   background-color: #000;
-  border: 2px solid #fff;
 }
 
 .nav-close {
@@ -42,4 +61,103 @@
 .nav-check {
   position: absolute;
   top: -3em;
+}
+
+.nav-toggle {
+  float: right
+  width: 35px;
+  padding: .5rem;
+  border: 2px solid grey;
+  border-radius: 6px;
+}
+
+.nav-toggle:hover {
+  background-color: grey;
+  border: 2px solid grey;
+}
+
+.nav a {
+  width: 100px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 1, .8);
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+}
+
+.nav a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.banner {
+  min-height: 300px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/store.jpg);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.slogan {
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -40%);
+}
+
+.button {
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
+  -webkit-transform: translate(-50%, -80%);
+}
+
+.btn {
+  font-family: Verdana, sans-serif;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+.font {
+  font-family: 'Rochester', cursive;
+}
+
+.sans-serif {
+  font-family: Verdana, sans-serif;
+}
+
+section {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .contact {
+    text-align: center;
+  }
+
+  .banner {
+    height: 500px;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+
+
 }
